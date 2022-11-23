@@ -1,0 +1,81 @@
+.adminLogin {
+  display: flex;
+}
+.adminLogin .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: #800000;
+  width: 60%;
+  height: 100vh;
+}
+.adminLogin .hero .Logo {
+  height: 300px;
+  width: 300px;
+}
+.adminLogin .hero .title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.adminLogin .side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.adminLogin .side .newform {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+  padding: 20px 25px;
+  box-shadow: 7.7px 9.7px 12.2px rgba(0, 0, 0, 0.056), 15px 19px 25px rgba(0, 0, 0, 0.12);
+}
+.adminLogin .side .newform h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.adminLogin .side .newform .txtfields > input {
+  display: block;
+  font-weight: 400;
+  font-size: 21px;
+  height: 15px;
+  width: 300px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.adminLogin .side .newform .txtfields > input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px #800000;
+}
+.adminLogin .side .btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.adminLogin .side .btn .cancel {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: none;
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid #800000;
+  cursor: pointer;
+}
+.adminLogin .side .btn .submit {
+  padding: 10px 40px;
+  background-color: #800000;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.adminLogin .side .btn .submit:hover {
+  background-color: #a70000;
+}

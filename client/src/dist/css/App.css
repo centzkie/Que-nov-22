@@ -1,0 +1,1126 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(172, 0, 0)), color-stop(0.72, rgb(134, 0, 0)), color-stop(0.86, rgb(99, 3, 0)));
+}
+
+.landing .wrapper .access {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.landing .wrapper .access .admin {
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 3rem;
+  color: #800000;
+}
+.landing .wrapper .access .admin:hover {
+  color: #a70000;
+}
+.landing .wrapper .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 85vh;
+  width: 100%;
+}
+.landing .wrapper .content .card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  height: 50%;
+  width: 50%;
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 7.7px 9.7px 12.2px rgba(0, 0, 0, 0.056), 15px 19px 25px rgba(0, 0, 0, 0.056);
+}
+.landing .wrapper .content .card .elements {
+  position: relative;
+  width: 100%;
+}
+.landing .wrapper .content .card .elements .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.landing .wrapper .content .card .elements .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  gap: 20px;
+}
+.landing .wrapper .content .card .elements .buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: 90%;
+}
+.landing .wrapper .content .card .elements .buttons > div > button {
+  border: none;
+  font-weight: 300;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: inherit;
+  background-color: #800000;
+  color: white;
+  cursor: pointer;
+}
+.landing .tables {
+  height: 100vh;
+}
+.landing .tables .nowServing,
+.landing .tables .queueLandin {
+  padding: 20px 50px;
+}
+.landing .tables .nowServing h2,
+.landing .tables .queueLandin h2 {
+  color: #800000;
+}
+.landing .tables h2 {
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-align: center;
+  color: #ffd700;
+}
+@media only screen and (max-width: 1280px) and (min-width: 1230px) {
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1231px) and (min-width: 935px) {
+  .landing .wrapper .content .card {
+    padding: 15px;
+    height: 50%;
+    width: 48%;
+  }
+  .landing .wrapper .content .card .elements {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.5rem;
+  }
+  .landing .wrapper .content .card .elements .buttons {
+    padding: 30px 0;
+    gap: 15px;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    border: none;
+    font-weight: 300;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: inherit;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 937px) and (min-width: 550px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 80%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.4rem;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    border: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: inherit;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 549px) and (min-width: 485px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 85%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.3rem;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    border: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: inherit;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 484px) and (min-width: 365px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 90%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1rem;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    font-size: 1rem;
+    border-radius: 12px;
+  }
+}
+@media only screen and (max-width: 364px) and (min-width: 334px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 90%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 0.9rem;
+  }
+  .landing .wrapper .content .card .elements .buttons {
+    gap: 10px;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 333px) and (min-width: 320px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 90%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 0.85rem;
+  }
+  .landing .wrapper .content .card .elements .buttons {
+    gap: 10px;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    font-size: 0.8rem;
+    border-radius: 10px;
+  }
+}
+
+.wrapper .background {
+  height: 15vh;
+  width: 100%;
+}
+.wrapper .background::before {
+  content: "";
+  position: absolute;
+  background: #ffd700;
+  width: 100%;
+  height: 110px;
+  -webkit-clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+          clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+}
+.wrapper .background .overlap {
+  width: 100%;
+  height: 100px;
+  background: url(../Image/pupsmbbg.jpg) center no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+          clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .wrapper .background::before {
+    width: 100%;
+    height: 100px;
+  }
+  .wrapper .background .overlap {
+    width: 100%;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .wrapper .background::before {
+    width: 100%;
+    height: 90px;
+  }
+  .wrapper .background .overlap {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+}
+.form .newform {
+  padding: 12px 15px;
+}
+.form .newform > div {
+  padding: 20px;
+}
+.form .newform > div label {
+  font-size: 1.5rem;
+  width: 200px;
+  display: inline-block;
+}
+.form .newform > div input,
+.form .newform > div select {
+  margin-top: 5px;
+  width: 435px;
+  height: 45px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0 15px;
+}
+.form .newform > div input:focus,
+.form .newform > div select:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px #800000;
+}
+.form .newform .generateQLNbtn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  height: 120px;
+  border-top: 1px solid #800000;
+}
+.form .newform .generateQLNbtn > button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.form .newform .generateQLNbtn .cancel {
+  background-color: transparent;
+  border: 1px solid #800000;
+}
+.form .newform .generateQLNbtn .submit {
+  background-color: #800000;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+@media only screen and (max-width: 768px) and (min-width: 551px) {
+  .form h1 {
+    font-size: 2.5rem;
+  }
+  .form .newform {
+    padding: 10px 12px;
+  }
+  .form .newform > div {
+    padding: 18px;
+  }
+  .form .newform > div label {
+    font-size: 1.2rem;
+    width: 180px;
+  }
+  .form .newform > div input,
+.form .newform > div select {
+    margin-top: 0;
+    width: 60%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .form .newform .generateQLNbtn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+  .form .newform .generateQLNbtn > button {
+    padding: 8px 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 550px) and (min-width: 481px) {
+  .form h1 {
+    font-size: 2rem;
+  }
+  .form .newform {
+    padding: 10px 12px;
+  }
+  .form .newform > div {
+    padding: 15px;
+  }
+  .form .newform > div label {
+    font-size: 1.2rem;
+    width: 180px;
+  }
+  .form .newform > div input,
+.form .newform > div select {
+    margin-top: 0;
+    width: 55%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .form .newform .generateQLNbtn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+  .form .newform .generateQLNbtn > button {
+    padding: 8px 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .form h1 {
+    font-size: 1.32rem;
+  }
+  .form .newform {
+    padding: 10px 12px;
+  }
+  .form .newform > div {
+    padding: 15px;
+  }
+  .form .newform > div label {
+    font-size: 1rem;
+    width: 110px;
+    margin-left: 5px;
+  }
+  .form .newform > div input,
+.form .newform > div select {
+    margin-top: 0;
+    width: 55%;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .form .newform .generateQLNbtn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+  .form .newform .generateQLNbtn > button {
+    padding: 6px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+}
+
+.queueSuccess {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+}
+.queueSuccess .top h3 {
+  font-size: 5rem;
+}
+.queueSuccess .number h1 {
+  font-size: 8rem;
+}
+.queueSuccess .note {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.queueSuccess .note p {
+  font-size: 1.8rem;
+}
+.queueSuccess .button {
+  margin: 20px;
+}
+.queueSuccess .button > button {
+  border: none;
+  font-weight: 300;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 200px;
+  background-color: #800000;
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) and (min-width: 551px) {
+  .queueSuccess .top h3 {
+    font-size: 3.5rem;
+  }
+  .queueSuccess .number h1 {
+    font-size: 5.5rem;
+  }
+  .queueSuccess .note {
+    padding: 0 15px;
+  }
+  .queueSuccess .note p {
+    font-size: 1.3rem;
+  }
+  .queueSuccess .button > button {
+    font-size: 1.2rem;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 550px) and (min-width: 481px) {
+  .queueSuccess .number h1 {
+    font-size: 5rem;
+  }
+  .queueSuccess .note {
+    padding: 0 10px;
+  }
+  .queueSuccess .note p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .queueSuccess .top h3 {
+    font-size: 2.8rem;
+  }
+  .queueSuccess .number h1 {
+    font-size: 4rem;
+  }
+  .queueSuccess .note {
+    padding: 0 20px;
+  }
+  .queueSuccess .note p {
+    font-size: 0.5rem;
+  }
+  .queueSuccess .button > button {
+    font-size: 1rem;
+    width: 180px;
+  }
+}
+
+.adminLogin {
+  display: flex;
+}
+.adminLogin .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: #800000;
+  width: 60%;
+  height: 100vh;
+}
+.adminLogin .hero .Logo {
+  height: 300px;
+  width: 300px;
+}
+.adminLogin .hero .title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.adminLogin .side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.adminLogin .side .newform {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+  padding: 20px 25px;
+  box-shadow: 7.7px 9.7px 12.2px rgba(0, 0, 0, 0.056), 15px 19px 25px rgba(0, 0, 0, 0.12);
+}
+.adminLogin .side .newform h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.adminLogin .side .newform .txtfields > input {
+  display: block;
+  font-weight: 400;
+  font-size: 21px;
+  height: 15px;
+  width: 300px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.adminLogin .side .newform .txtfields > input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px #800000;
+}
+.adminLogin .side .btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.adminLogin .side .btn .cancel {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: none;
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid #800000;
+  cursor: pointer;
+}
+.adminLogin .side .btn .submit {
+  padding: 10px 40px;
+  background-color: #800000;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.adminLogin .side .btn .submit:hover {
+  background-color: #a70000;
+}
+
+.main {
+  display: flex;
+}
+.main .mainContent {
+  padding: 20px;
+  width: 100%;
+}
+.main .mainContent .title h1 {
+  padding: 10px 0;
+}
+.main .mainContent .tables {
+  display: grid;
+  gap: 2.5rem;
+}
+.main .mainContent .tables .ctrlNowServing .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+.main .mainContent .tables .ctrlQueueLines .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.signout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: #800000;
+  border-radius: 80px;
+}
+.signout:hover {
+  cursor: pointer;
+}
+
+.panel {
+  display: flex;
+}
+.panel .content {
+  background: #800000;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 250px;
+}
+.panel .content .header {
+  margin-top: 70px;
+}
+.panel .content .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel .content .header .logo .sidepanelLogo {
+  height: 150px;
+  width: 150px;
+}
+.panel .content .navigate {
+  margin-top: 60px;
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt:hover {
+  background: #a70000;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt .navtxt,
+.panel .content .navigate .linktxt .navicon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.announcement {
+  display: flex;
+}
+.announcement .announcementContent {
+  padding: 20px;
+  width: 100%;
+}
+.announcement .announcementContent form textarea {
+  padding: 10px 20px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+  font-size: 1.3rem;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.announcement .announcementContent form textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px #800000;
+}
+.announcement .announcementContent form .button {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.announcement .announcementContent form .button button {
+  padding: 10px 40px;
+  background-color: #800000;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.announcement .announcementContent form .button button:hover {
+  background-color: #a70000;
+}
+.announcement .announcementContent .table {
+  margin-top: 40px;
+}
+
+.signout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: #800000;
+  border-radius: 80px;
+}
+.signout:hover {
+  cursor: pointer;
+}
+
+.panel {
+  display: flex;
+}
+.panel .content {
+  background: #800000;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 250px;
+}
+.panel .content .header {
+  margin-top: 70px;
+}
+.panel .content .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel .content .header .logo .sidepanelLogo {
+  height: 150px;
+  width: 150px;
+}
+.panel .content .navigate {
+  margin-top: 60px;
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt:hover {
+  background: #a70000;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt .navtxt,
+.panel .content .navigate .linktxt .navicon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.history {
+  display: flex;
+}
+.history .mainContent {
+  padding: 20px;
+  width: 100%;
+}
+.history .mainContent .title h1 {
+  padding: 10px 0;
+}
+
+.signout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: #800000;
+  border-radius: 80px;
+}
+.signout:hover {
+  cursor: pointer;
+}
+
+.panel {
+  display: flex;
+}
+.panel .content {
+  background: #800000;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 250px;
+}
+.panel .content .header {
+  margin-top: 70px;
+}
+.panel .content .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel .content .header .logo .sidepanelLogo {
+  height: 150px;
+  width: 150px;
+}
+.panel .content .navigate {
+  margin-top: 60px;
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt:hover {
+  background: #a70000;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt .navtxt,
+.panel .content .navigate .linktxt .navicon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.wrapper .background {
+  height: 15vh;
+  width: 100%;
+}
+.wrapper .background::before {
+  content: "";
+  position: absolute;
+  background: #ffd700;
+  width: 100%;
+  height: 110px;
+  -webkit-clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+          clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+}
+.wrapper .background .overlap {
+  width: 100%;
+  height: 100px;
+  background: url(../Image/pupsmbbg.jpg) center no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+          clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .wrapper .background::before {
+    width: 100%;
+    height: 100px;
+  }
+  .wrapper .background .overlap {
+    width: 100%;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .wrapper .background::before {
+    width: 100%;
+    height: 90px;
+  }
+  .wrapper .background .overlap {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+.editForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+}
+.editForm .newform {
+  padding: 12px 15px;
+}
+.editForm .newform > div {
+  padding: 20px;
+}
+.editForm .newform > div label {
+  font-size: 1.5rem;
+  width: 200px;
+  display: inline-block;
+}
+.editForm .newform > div input,
+.editForm .newform > div select {
+  margin-top: 5px;
+  width: 435px;
+  height: 50px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0 15px;
+}
+.editForm .newform > div input:focus,
+.editForm .newform > div select:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px #800000;
+}
+.editForm .newform .generateQLNbtn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  height: 120px;
+  border-top: 1px solid #800000;
+}
+.editForm .newform .generateQLNbtn > button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.editForm .newform .generateQLNbtn .cancel {
+  background-color: transparent;
+  border: 1px solid #800000;
+}
+.editForm .newform .generateQLNbtn .submit {
+  background-color: #800000;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+@media only screen and (max-width: 768px) and (min-width: 551px) {
+  .editForm h1 {
+    font-size: 2.5rem;
+  }
+  .editForm .newform {
+    padding: 10px 12px;
+  }
+  .editForm .newform > div {
+    padding: 18px;
+  }
+  .editForm .newform > div label {
+    font-size: 1.2rem;
+    width: 180px;
+  }
+  .editForm .newform > div input,
+.editForm .newform > div select {
+    margin-top: 0;
+    width: 60%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .editForm .newform .generateQLNbtn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+  .editForm .newform .generateQLNbtn > button {
+    padding: 8px 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 550px) and (min-width: 481px) {
+  .editForm h1 {
+    font-size: 2.2rem;
+  }
+  .editForm .newform {
+    padding: 10px 12px;
+  }
+  .editForm .newform > div {
+    padding: 15px;
+  }
+  .editForm .newform > div label {
+    font-size: 1.2rem;
+    width: 180px;
+  }
+  .editForm .newform > div input,
+.editForm .newform > div select {
+    margin-top: 0;
+    width: 55%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .editForm .newform .generateQLNbtn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+  .editForm .newform .generateQLNbtn > button {
+    padding: 8px 35px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .editForm h1 {
+    font-size: 2rem;
+  }
+  .editForm .newform {
+    padding: 10px 12px;
+  }
+  .editForm .newform > div {
+    padding: 15px;
+  }
+  .editForm .newform > div label {
+    font-size: 1rem;
+    width: 110px;
+    margin-left: 5px;
+  }
+  .editForm .newform > div input,
+.editForm .newform > div select {
+    margin-top: 0;
+    width: 55%;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .editForm .newform .generateQLNbtn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+  .editForm .newform .generateQLNbtn > button {
+    padding: 6px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+}

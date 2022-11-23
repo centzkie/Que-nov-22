@@ -1,0 +1,49 @@
+.panel {
+  display: flex;
+}
+.panel .content {
+  background: #800000;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 250px;
+}
+.panel .content .header {
+  margin-top: 70px;
+}
+.panel .content .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel .content .header .logo .sidepanelLogo {
+  height: 150px;
+  width: 150px;
+}
+.panel .content .navigate {
+  margin-top: 60px;
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt:hover {
+  background: #a70000;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-top: 15px;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+.panel .content .navigate .linktxt .navtxt,
+.panel .content .navigate .linktxt .navicon {
+  font-size: 20px;
+  cursor: pointer;
+}

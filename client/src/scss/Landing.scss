@@ -1,0 +1,298 @@
+@use "./util/var.scss" as a;
+@use "./mixins/var.scss" as b;
+.landing {
+  .wrapper {
+    .access {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+
+      .admin {
+        position: sticky;
+        font-size: 3rem;
+        color: a.$primaryColor;
+        &:hover {
+          color: a.$primaryHover;
+        }
+      }
+    }
+
+    .content {
+      @include b.flexCenter;
+      flex-wrap: wrap;
+      height: 85vh;
+      width: 100%;
+      .card {
+        position: absolute;
+        @include b.flexCenter;
+        flex-direction: column;
+        padding: 25px;
+        height: 50%;
+        width: 50%;
+        border-radius: 15px;
+        background-color: a.$primaryBackground;
+        box-shadow: 7.7px 9.7px 12.2px a.$primaryShadow,
+          15px 19px 25px a.$primaryShadow;
+
+        .elements {
+          position: relative;
+          width: 100%;
+          .title {
+            @include b.flexCenter;
+            font-weight: 700;
+            font-size: 2rem;
+          }
+          .buttons {
+            @include b.flexCenter;
+            flex-direction: column;
+            padding: 30px 0;
+            gap: 20px;
+
+            > div {
+              @include b.flexCenter;
+              height: inherit;
+              width: 90%;
+              > button {
+                border: none;
+                font-weight: 300;
+                font-size: 1.4rem;
+                border-radius: 15px;
+                padding: 10px 15px;
+                width: inherit;
+                background-color: a.$primaryColor;
+                color: white;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tables {
+    height: 100vh;
+    // background: a.$primaryBackground;
+    .nowServing,
+    .queueLandin {
+      padding: 20px 50px;
+      h2 {
+        color: a.$primaryColor;
+      }
+    }
+    h2 {
+      margin: 10px 0;
+      padding: 10px 20px;
+      text-align: center;
+      color: a.$secondaryColor;
+      // background-color: a.$primaryBackground;
+    }
+  }
+
+  // media querries
+  @media only screen and (max-width: 1280px) and (min-width: 1230px) {
+    .wrapper {
+      .content {
+        .card {
+          .elements {
+            .title {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1231px) and (min-width: 935px) {
+    .wrapper {
+      .content {
+        .card {
+          padding: 15px;
+          height: 50%;
+          width: 48%;
+
+          .elements {
+            width: 100%;
+            .title {
+              font-size: 1.5rem;
+            }
+            .buttons {
+              padding: 30px 0;
+              gap: 15px;
+
+              > div {
+                width: 100%;
+                > button {
+                  border: none;
+                  font-weight: 300;
+                  font-size: 1.3rem;
+                  border-radius: 15px;
+                  padding: 10px 15px;
+                  width: inherit;
+                  background-color: a.$primaryColor;
+                  color: white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 937px) and (min-width: 550px) {
+    .wrapper {
+      .access {
+        .admin {
+          display: none;
+        }
+      }
+      .content {
+        .card {
+          width: 80%;
+          .elements {
+            .title {
+              font-size: 1.4rem;
+            }
+            .buttons {
+              > div {
+                width: 100%;
+                > button {
+                  border: none;
+                  font-weight: 300;
+                  font-size: 1.2rem;
+                  border-radius: 15px;
+                  padding: 10px 15px;
+                  width: inherit;
+                  background-color: a.$primaryColor;
+                  color: white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 549px) and (min-width: 485px) {
+    .wrapper {
+      .access {
+        .admin {
+          display: none;
+        }
+      }
+      .content {
+        .card {
+          width: 85%;
+          .elements {
+            .title {
+              font-size: 1.3rem;
+            }
+            .buttons {
+              > div {
+                width: 100%;
+                > button {
+                  border: none;
+                  font-weight: 300;
+                  font-size: 1.2rem;
+                  border-radius: 15px;
+                  padding: 10px 15px;
+                  width: inherit;
+                  background-color: a.$primaryColor;
+                  color: white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 484px) and (min-width: 365px) {
+    .wrapper {
+      .access {
+        .admin {
+          display: none;
+        }
+      }
+      .content {
+        .card {
+          width: 90%;
+          .elements {
+            .title {
+              font-size: 1rem;
+            }
+            .buttons {
+              > div {
+                width: 100%;
+                > button {
+                  font-size: 1rem;
+                  border-radius: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 364px) and (min-width: 334px) {
+    .wrapper {
+      .access {
+        .admin {
+          display: none;
+        }
+      }
+      .content {
+        .card {
+          width: 90%;
+          .elements {
+            .title {
+              font-size: 0.9rem;
+            }
+            .buttons {
+              gap: 10px;
+              > div {
+                width: 100%;
+                > button {
+                  font-size: 0.9rem;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 333px) and (min-width: 320px) {
+    .wrapper {
+      .access {
+        .admin {
+          display: none;
+        }
+      }
+      .content {
+        .card {
+          width: 90%;
+          .elements {
+            .title {
+              font-size: 0.85rem;
+            }
+            .buttons {
+              gap: 10px;
+              > div {
+                width: 100%;
+                > button {
+                  font-size: 0.8rem;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@use "./util/var.scss" as a;
+@use "./mixins//var.scss" as b;
+
+.announcement {
+  display: flex;
+  .announcementContent {
+    padding: 20px;
+    width: 100%;
+    form {
+      textarea {
+        padding: 10px 20px;
+        width: 100%;
+        min-height: 100px;
+        max-height: 150px;
+        font-size: 1.3rem;
+        border: 1px solid a.$primaryOutline;
+        border-radius: 10px;
+        margin-top: 20px;
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: 0 0 10px a.$primaryColor;
+        }
+      }
+      .button {
+        display: flex;
+
+        gap: 10px;
+        margin-top: 20px;
+        button {
+          padding: 10px 40px;
+          background-color: a.$primaryColor;
+          color: a.$white;
+          font-size: 15px;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            background-color: a.$primaryHover;
+          }
+        }
+      }
+    }
+    .table {
+      margin-top: 40px;
+    }
+  }
+}
+
+@import "./AdminSignOutbtn.scss";
+@import "./Sidepanel.scss";

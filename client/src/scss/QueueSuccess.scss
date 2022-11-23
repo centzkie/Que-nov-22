@@ -1,0 +1,108 @@
+@use "./util/var.scss" as a;
+@use "./mixins/var.scss" as b;
+
+.queueSuccess {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 85vh;
+  width: 100%;
+  .top {
+    h3 {
+      font-size: 5rem;
+    }
+  }
+  .number {
+    h1 {
+      font-size: 8rem;
+    }
+  }
+  .note {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0 20px;
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .button {
+    margin: 20px;
+    > button {
+      border: none;
+      font-weight: 300;
+      font-size: 1.4rem;
+      border-radius: 15px;
+      padding: 10px 15px;
+      width: 200px;
+      background-color: a.$primaryColor;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width: 551px) {
+    .top {
+      h3 {
+        font-size: 3.5rem;
+      }
+    }
+    .number {
+      h1 {
+        font-size: 5.5rem;
+      }
+    }
+    .note {
+      padding: 0 15px;
+      p {
+        font-size: 1.3rem;
+      }
+    }
+    .button {
+      > button {
+        font-size: 1.2rem;
+        width: 200px;
+      }
+    }
+  }
+  @media only screen and (max-width: 550px) and (min-width: 481px) {
+    .number {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+    .note {
+      padding: 0 10px;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) and (min-width: 320px) {
+    .top {
+      h3 {
+        font-size: 2.8rem;
+      }
+    }
+    .number {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    .note {
+      padding: 0 20px;
+      p {
+        font-size: 0.5rem;
+      }
+    }
+    .button {
+      > button {
+        font-size: 1rem;
+        width: 180px;
+      }
+    }
+  }
+}

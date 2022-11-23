@@ -1,0 +1,15 @@
+.signout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: #800000;
+  border-radius: 80px;
+}
+.signout:hover {
+  cursor: pointer;
+}

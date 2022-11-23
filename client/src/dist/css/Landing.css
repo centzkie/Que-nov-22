@@ -1,0 +1,235 @@
+.landing .wrapper .access {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.landing .wrapper .access .admin {
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 3rem;
+  color: #800000;
+}
+.landing .wrapper .access .admin:hover {
+  color: #a70000;
+}
+.landing .wrapper .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 85vh;
+  width: 100%;
+}
+.landing .wrapper .content .card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  height: 50%;
+  width: 50%;
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 7.7px 9.7px 12.2px rgba(0, 0, 0, 0.056), 15px 19px 25px rgba(0, 0, 0, 0.056);
+}
+.landing .wrapper .content .card .elements {
+  position: relative;
+  width: 100%;
+}
+.landing .wrapper .content .card .elements .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.landing .wrapper .content .card .elements .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  gap: 20px;
+}
+.landing .wrapper .content .card .elements .buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: 90%;
+}
+.landing .wrapper .content .card .elements .buttons > div > button {
+  border: none;
+  font-weight: 300;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: inherit;
+  background-color: #800000;
+  color: white;
+  cursor: pointer;
+}
+.landing .tables {
+  height: 100vh;
+}
+.landing .tables .nowServing,
+.landing .tables .queueLandin {
+  padding: 20px 50px;
+}
+.landing .tables .nowServing h2,
+.landing .tables .queueLandin h2 {
+  color: #800000;
+}
+.landing .tables h2 {
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-align: center;
+  color: #ffd700;
+}
+@media only screen and (max-width: 1280px) and (min-width: 1230px) {
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1231px) and (min-width: 935px) {
+  .landing .wrapper .content .card {
+    padding: 15px;
+    height: 50%;
+    width: 48%;
+  }
+  .landing .wrapper .content .card .elements {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.5rem;
+  }
+  .landing .wrapper .content .card .elements .buttons {
+    padding: 30px 0;
+    gap: 15px;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    border: none;
+    font-weight: 300;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: inherit;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 937px) and (min-width: 550px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 80%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.4rem;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    border: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: inherit;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 549px) and (min-width: 485px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 85%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1.3rem;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    border: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: inherit;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 484px) and (min-width: 365px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 90%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 1rem;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    font-size: 1rem;
+    border-radius: 12px;
+  }
+}
+@media only screen and (max-width: 364px) and (min-width: 334px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 90%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 0.9rem;
+  }
+  .landing .wrapper .content .card .elements .buttons {
+    gap: 10px;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 333px) and (min-width: 320px) {
+  .landing .wrapper .access .admin {
+    display: none;
+  }
+  .landing .wrapper .content .card {
+    width: 90%;
+  }
+  .landing .wrapper .content .card .elements .title {
+    font-size: 0.85rem;
+  }
+  .landing .wrapper .content .card .elements .buttons {
+    gap: 10px;
+  }
+  .landing .wrapper .content .card .elements .buttons > div {
+    width: 100%;
+  }
+  .landing .wrapper .content .card .elements .buttons > div > button {
+    font-size: 0.8rem;
+    border-radius: 10px;
+  }
+}

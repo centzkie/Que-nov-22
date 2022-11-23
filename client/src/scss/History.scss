@@ -1,0 +1,18 @@
+@use "./util/var.scss" as a;
+@use "./mixins//var.scss" as b;
+
+.history {
+  display: flex;
+  .mainContent {
+    padding: 20px;
+    width: 100%;
+    .title {
+      h1 {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+@import "./AdminSignOutbtn.scss";
+@import "./Sidepanel.scss";

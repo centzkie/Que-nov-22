@@ -1,0 +1,183 @@
+@use "./util//var.scss" as a;
+@use "./mixins//var.scss" as b;
+@import "../scss/Tophero.scss";
+
+.form {
+  @include b.flexCenter;
+  flex-direction: column;
+  height: 85vh;
+
+  .newform {
+    padding: 12px 15px;
+
+    > div {
+      padding: 20px;
+      label {
+        font-size: 1.5rem;
+        width: 200px;
+        display: inline-block;
+      }
+
+      input,
+      select {
+        margin-top: 5px;
+        width: 435px;
+        height: 45px;
+        border: 1px solid a.$primaryOutline;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 0 15px;
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: 0 0 10px a.$primaryColor;
+        }
+      }
+    }
+
+    .generateQLNbtn {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 10px;
+      height: 120px;
+      border-top: 1px solid a.$primaryColor;
+      > button {
+        padding: 10px 40px;
+        border-radius: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .cancel {
+        background-color: transparent;
+        border: 1px solid a.$primaryColor;
+      }
+      .submit {
+        background-color: a.$primaryColor;
+        color: a.$white;
+        border: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width: 551px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    .newform {
+      padding: 10px 12px;
+
+      > div {
+        padding: 18px;
+        label {
+          font-size: 1.2rem;
+          width: 180px;
+        }
+
+        input,
+        select {
+          margin-top: 0;
+          width: 60%;
+          height: 50px;
+          border-radius: 8px;
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+      }
+
+      .generateQLNbtn {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        height: 100px;
+
+        > button {
+          padding: 8px 35px;
+          border-radius: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 550px) and (min-width: 481px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .newform {
+      padding: 10px 12px;
+
+      > div {
+        padding: 15px;
+        label {
+          font-size: 1.2rem;
+          width: 180px;
+        }
+
+        input,
+        select {
+          margin-top: 0;
+          width: 55%;
+          height: 50px;
+          border-radius: 8px;
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+      }
+
+      .generateQLNbtn {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        height: 100px;
+
+        > button {
+          padding: 8px 35px;
+          border-radius: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) and (min-width: 320px) {
+    h1 {
+      font-size: 1.32rem;
+    }
+    .newform {
+      padding: 10px 12px;
+
+      > div {
+        padding: 15px;
+        label {
+          font-size: 1rem;
+          width: 110px;
+          margin-left: 5px;
+        }
+
+        input,
+        select {
+          margin-top: 0;
+          width: 55%;
+          height: 40px;
+          border-radius: 6px;
+          font-size: 14px;
+          padding: 0 10px;
+        }
+      }
+
+      .generateQLNbtn {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        height: 100px;
+
+        > button {
+          padding: 6px 28px;
+          border-radius: 8px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

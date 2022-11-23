@@ -1,0 +1,16 @@
+@use "./util/var.scss" as a;
+@use "./mixins/var.scss" as b;
+
+.signout {
+  @include b.flexCenter;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 3rem;
+  color: a.$white;
+  background-color: a.$primaryColor;
+  border-radius: 80px;
+  &:hover {
+    cursor: pointer;
+  }
+}

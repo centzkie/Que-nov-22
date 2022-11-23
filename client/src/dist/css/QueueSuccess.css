@@ -1,0 +1,85 @@
+.queueSuccess {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+}
+.queueSuccess .top h3 {
+  font-size: 5rem;
+}
+.queueSuccess .number h1 {
+  font-size: 8rem;
+}
+.queueSuccess .note {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.queueSuccess .note p {
+  font-size: 1.8rem;
+}
+.queueSuccess .button {
+  margin: 20px;
+}
+.queueSuccess .button > button {
+  border: none;
+  font-weight: 300;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 200px;
+  background-color: #800000;
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) and (min-width: 551px) {
+  .queueSuccess .top h3 {
+    font-size: 3.5rem;
+  }
+  .queueSuccess .number h1 {
+    font-size: 5.5rem;
+  }
+  .queueSuccess .note {
+    padding: 0 15px;
+  }
+  .queueSuccess .note p {
+    font-size: 1.3rem;
+  }
+  .queueSuccess .button > button {
+    font-size: 1.2rem;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 550px) and (min-width: 481px) {
+  .queueSuccess .number h1 {
+    font-size: 5rem;
+  }
+  .queueSuccess .note {
+    padding: 0 10px;
+  }
+  .queueSuccess .note p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .queueSuccess .top h3 {
+    font-size: 2.8rem;
+  }
+  .queueSuccess .number h1 {
+    font-size: 4rem;
+  }
+  .queueSuccess .note {
+    padding: 0 20px;
+  }
+  .queueSuccess .note p {
+    font-size: 0.5rem;
+  }
+  .queueSuccess .button > button {
+    font-size: 1rem;
+    width: 180px;
+  }
+}

@@ -1,0 +1,50 @@
+@use "./util/var.scss" as a;
+@use "./mixins/var.scss" as b;
+.panel {
+  display: flex;
+  .content {
+    background: a.$primaryColor;
+    color: a.$white;
+    height: 100vh;
+    width: 250px;
+    .header {
+      margin-top: 70px;
+      .logo {
+        @include b.flexCenter;
+        .sidepanelLogo {
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
+    .navigate {
+      margin-top: 60px;
+      .linktxt {
+        display: flex;
+        text-decoration: none;
+        padding: 20px 15px;
+        margin-top: 15px;
+        gap: 25px;
+        color: a.$white;
+        &:hover {
+          background: a.$primaryHover;
+          color: a.$white;
+        }
+      }
+
+      .linktxt {
+        display: flex;
+        text-decoration: none;
+        padding: 20px 15px;
+        margin-top: 15px;
+        gap: 25px;
+        color: a.$white;
+        .navtxt,
+        .navicon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
